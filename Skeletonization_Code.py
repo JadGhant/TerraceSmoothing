@@ -22,7 +22,7 @@ with rasterio.open(terrace_mask_path) as mask_raster:
     
     # Saving the skeleton mask to a new raster file
     skeleton_profile = mask_raster.profile
-    skeleton_profile.update(dtype=rasterio.uint8, nodata=None)  # Set nodata to None
+    skeleton_profile.update(dtype=rasterio.uint8, nodata=None)  
     
     with rasterio.open('SKELETON_RASTER.tif', 'w', **skeleton_profile) as skeleton_raster:
         skeleton_raster.write(skeleton.astype(np.uint8), 1)
@@ -71,7 +71,7 @@ with rasterio.open(terrace_mask_path) as mask_raster:
     
     # Saving the skeleton mask to a new raster file
     skeleton_profile = mask_raster.profile
-    skeleton_profile.update(dtype=rasterio.uint8, nodata=None)  # Set nodata to None
+    skeleton_profile.update(dtype=rasterio.uint8, nodata=None)  
     
     with rasterio.open('SKELETON_RASTER.tif', 'w', **skeleton_profile) as skeleton_raster:
         skeleton_raster.write(skeleton.astype(np.uint8), 1)
