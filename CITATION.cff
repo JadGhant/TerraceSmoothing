@@ -1,7 +1,12 @@
 cff-version: 1.1.0
 message: "If you use this software, please cite it as below."
-authors: Jad Ghantous ,Vincenzo Di Pietra 
-orcid: https://orcid.org/ 0009-0001-3817-3578, https://orcid.org/ 0000-0001-7501-1183
+authors:
+- family-names: "Ghantous"
+  given-names: "Jad"
+  orcid: "https://orcid.org/ 0009-0001-3817-3578"
+- family-names: "Di Pietra"
+  given-names: "Vincenzo"
+  orcid: "https://orcid.org/ 0000-0001-7501-1183"
 title:JadGhant/TerraceSmoothing: Source Code
 version: v1.2.0
 date-released: 2025-04-10
